@@ -1,0 +1,13 @@
+main p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 30px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #ffffff;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+nav a {
+    color: #00bcd4;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.processors-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.processor-card {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.processor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+.processor-card h3 {
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.processor-card p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.processor-card ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.processor-card ul li {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 50px;
+    font-size: 1rem;
+    color: #ccc;
+}
