@@ -10,9 +10,11 @@
     background-color: rgba(255, 255, 255, 0.05);
     padding: 20px;
     border-radius: 15px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
     transition: transform 0.3s;
+    text-align: center;
 }
 
 .highlights div:hover {
@@ -33,8 +35,40 @@
     border-radius: 25px;
     margin-top: 20px;
     transition: background-color 0.3s;
+    text-align: center;
 }
 
 .cta-button:hover {
     background-color: #008fa3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .highlights {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .highlights div {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .highlights div {
+        width: 95%;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }

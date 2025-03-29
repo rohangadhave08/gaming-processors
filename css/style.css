@@ -6,6 +6,7 @@ body {
     color: #fff;
 }
 
+/* Header */
 header {
     background-color: #111;
     padding: 20px;
@@ -17,8 +18,13 @@ header h1 {
     font-size: 2.5rem;
 }
 
+/* Navigation */
 nav {
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 nav a {
@@ -33,8 +39,10 @@ nav a:hover {
     color: #00bcd4;
 }
 
+/* Main Content */
 main {
     padding: 30px;
+    text-align: center;
 }
 
 h2 {
@@ -42,6 +50,7 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Footer */
 footer {
     background-color: #111;
     padding: 15px;
@@ -49,4 +58,56 @@ footer {
     font-size: 0.9rem;
     margin-top: 40px;
     color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    nav a {
+        margin: 5px 0;
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }

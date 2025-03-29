@@ -1,13 +1,49 @@
 main p {
     line-height: 1.7;
     margin-bottom: 20px;
+    font-size: 1.1rem;
 }
 
+/* Unordered List */
 ul {
     list-style: disc;
     margin-left: 30px;
 }
 
+/* List Items */
 ul li {
     margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    ul {
+        margin-left: 25px;
+    }
+
+    ul li {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    ul {
+        margin-left: 20px;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
 }
